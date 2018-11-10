@@ -1,0 +1,311 @@
+#top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    border-bottom: 1px solid #cfcfcf;
+    line-height: 75px;
+    background: white;
+    z-index: 99;
+}
+#top .has{
+    display: inline-block;
+    /*height: 75px;*/
+    width: 100%;
+}
+#top img{
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 40px;
+    float: left;
+}
+#top .menu{
+    float: left;
+}
+#top .menu>a{
+    display: inline-block;
+    height: 75px;
+    padding:0 25px;
+    font-size: 14px;
+    color: gray;
+}
+#top .menu:hover{
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+}
+#top .sub-menu{
+    position: absolute;
+    z-index: 99;
+    top: 75px;
+    left: 0;
+    padding-left: 400px;
+    width: 700px;
+    display: none;
+}
+#top .sub-menu li{
+    display: inline-block;
+    /*height: 75px;*/
+}
+#top .sub-menu li a{
+    padding:0 25px;
+    font-size: 14px;
+    color: black;
+}
+#top .has:after{
+    content: '';
+    position: fixed;
+    top: 75px;
+    display: none;
+    height: 98px;
+    width: 100%;
+    background: rgba(255,255,255,.5);
+}
+#top .menu:hover .sub-menu{
+    display: block;
+}
+#top .has:hover:after{
+    display: block;
+}
+#imgs{
+    height: 720px;
+    position: relative;
+    top: 75px;
+}
+#container{
+    width:100%;
+    height: 100%;
+}
+#container  img{
+    position: absolute;
+    display: none;
+}
+#container .select{
+    display: block;
+}
+#imgnav{
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    z-index: 99;
+}
+#imgnav div{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-left:10px;
+    background: none;
+    opacity: 0.5;
+ }
+#imgnav .select{
+    background: white;
+}
+#list{
+    position: relative;
+    top: 75px;
+    padding: 20px 15px;
+    background: #eeeeee;
+    height: 1100px;
+}
+#list #first{
+    display: flex;
+    justify-content:center
+}
+#list #first .new{
+    position: relative;
+    height: 336px;
+    width: 544px;
+    float: left;
+    margin: 0 15px;
+    display: flex;
+    overflow: hidden;
+}
+
+#list #first img{
+    height: 100%;
+    width: 100%;
+
+}
+#list a:hover img{
+    transition-duration: 0.5s;
+    transform: scale(1.05,1.05);
+}
+#first .tips{
+    position: absolute;
+    bottom: 0;
+    padding-left: 34px;
+    padding-top: 5px;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+    background: rgba(237,27,35,.6);
+}
+#bottom,#middle{
+    margin-top: 30px;
+    display: flex;
+    justify-content:center
+
+}
+#bottom .new,#middle .new{
+    position: relative;
+    height: 333px;
+    width: 257px;
+    float: left;
+    margin: 0 15px;
+    display: flex;
+    overflow: hidden;
+
+}
+#bottom img,#middle img{
+    width: 100%;
+    height: 100%;
+}
+#bottom .tips,#middle .tips{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #f8efef;
+    height: 72px;
+    text-align: center;
+}
+#bottom .white,#middle .white{
+    color: #333333;
+}
+#bottom .tips p,#middle .tips p{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#bottom .tips span,#middle .tips span{
+    font-size: 14px;
+    line-height: 20px;
+}
+#world{
+    position: relative;
+    top: 60px;
+    height: 449px;
+    width: 100%;
+    background: white;
+    color: #ed1b23;
+
+}
+#hi{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 64px;
+    font-weight: 100;
+}
+#map{
+    margin: 0 auto;
+    width: 580px;
+    height: 449px;
+}
+#map img{
+    width: 637px;
+    height: 386px;
+    margin-top: 30px;
+}
+#map #three{
+    position: absolute;
+    top: 215px;
+    left: 230px;
+    text-align: right;
+}
+#map #two{
+    position: absolute;
+    bottom: 57px;
+    right: 370px;
+}
+#map #four{
+    position: absolute;
+    bottom: 140px;
+    right: 150px;
+}
+#map #five{
+    position: absolute;
+    bottom: 220px;
+    right: 150px;
+}
+#map h4{
+    font-weight: 400;
+}
+#map p{
+    font-size: 12px;
+    font-weight: 500;
+}
+#atten{
+    position: relative;
+    top: 50px;
+    height: 108px;
+    background: #e60012;
+    color: white;
+}
+#atten .left{
+    float: left;
+    padding: 20px 40px;
+}
+#atten .left h1{
+    font-weight: 400;
+}
+#atten .left span{
+    font-size: 14px;
+}
+#atten .right{
+    float: right;
+    line-height: 108px;
+    margin-right: 10px;
+}
+#atten i{
+    color: white;
+    font-size: 48px;
+    margin-right: 40px;
+}
+#atten .change:hover{
+    color: #ffcdd2;
+}
+#last{
+    height: 75px;
+    line-height: 75px;
+    background: #eeeeee;
+    position: relative;
+    top: 51px;
+    color: #636363;
+    font-size: 12px;
+}
+#last p{
+    float: left;
+    padding: 0 40px;
+}
+#last a{
+    position: absolute;
+    right: 40px;
+}
+#side{
+    position: fixed;
+    right: 0;
+    top: 120px;
+    width: 80px;
+    height: 153px;
+    color: #f8efef;
+    font-size: 12px;
+    text-align: center;
+    background: none;
+}
+#side li{
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 80px;
+    background: rgba(237, 27, 35, .8);
+    width: 100%;
+}
+#side li p{
+    padding-top: 5px;
+}
